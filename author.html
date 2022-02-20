@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作者介绍</title>
+    <style type="text/css">
+body{
+    background-image: url(https://img.tukuppt.com/ad_preview/00/18/23/5ee1f03b217f8.jpg!/fw/980);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(59, 66, 71);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 48, 48);
+	border-width: 1px;
+	padding: 0px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 15px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.logoz{
+    color: rgba(240, 248, 255);
+    position: absolute;
+    font-weight: 600;
+    font-family: 幼圆;
+    text-align: center;
+    border: 1px;
+    left:725px;
+    border:1px solid rgba(240, 248, 255);
+    border-radius: 5px;
+    padding: 5px 8px;
+    animation: logoz 500ms ease-in 2500ms forwards;
+    
+}
+
+@keyframes logoz{
+    to{
+    background-color:rgb(126, 173, 166)
+    }
+  
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+  
+.forwards{
+    text-align: center;
+}
+  
+.circle{
+    margin-top: 210px;
+    width: 220px;
+    height: 220px;
+    animation: img 1s 1s ease-in-out forwards;
+}
+  
+@keyframes img{
+    to{ 
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+      }
+}
+    .tittle{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: 30px;
+       color: rgb(233, 227, 218);
+       text-shadow:2px 2px brown;
+       animation: p 1s linear 1s forwards;
+       opacity: 1;/* (透明度0-1参数，透明度逐渐下降) */
+   }
+   
+   @keyframes p{
+       to{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size:10px;
+       opacity: 0;
+       }
+   }
+   .people{
+       flex-direction:column;
+     
+   }
+   .y{
+   z-index: 1;
+   position:absolute;
+   left: 5px;
+   width: 1300px;
+   animation:y 4500ms ease-in-out 2500ms 1 forwards;
+}
+   
+   .o{
+   z-index: 2;
+   position:absolute;
+   width: 1000px;
+   left: 350px;
+   animation:o 4500ms ease-in-out 2500ms 1 forwards;
+}
+  
+
+   @keyframes y{
+       50%{
+           left: -200px;
+
+       }
+       100%{
+           left: 2800px;
+       }
+       }
+
+    @keyframes o{
+       50%{
+           left: 500px;
+
+       }
+       100%{
+           left: -2400px;
+       }
+       }
+    .bac{
+        opacity: 0;
+        width: auto;
+        z-index: 3;
+        position: absolute;
+        width: 1000px;
+        height: 750px;
+        top: 150px;
+        left: 420px;
+        animation: bac 700ms ease-in-out 10s 1 forwards;
+    }
+   
+    .b{
+   z-index: 4;
+   position:absolute;
+   top:215px;
+   left:2800px;
+   width: 800px;
+   animation:b 3s ease-in-out 6s 1 forwards;
+}
+   
+   .h{
+   z-index: 5;
+   position:absolute;
+   top: 215px;
+   width: 800px;
+   left: -2400px;
+   animation:h 3s ease-in-out 6s 1 forwards;
+}
+  
+
+   @keyframes b{
+       to{
+           left: -50px;
+       }
+       }
+
+    @keyframes h{
+       to{
+           left: -70px;
+       }
+       }
+    .bac{
+        position: absolute; 
+        left: 420px;
+        opacity: 0;
+        width: auto;
+        z-index: 3;
+        width: 1000px;
+        height: 750px;
+        top: 150px;
+        animation: about 700ms ease-in-out 10s 1 forwards;
+    }
+    .color{
+        width:701px;
+        height:509px;
+        background-color: rgb(243, 235, 231);
+        position: absolute;
+        left: 570px;
+        top: 209px;
+        z-index: 0;
+        opacity: 0;
+        animation: about 700ms ease-in-out 10s 1 forwards;
+    }
+    @keyframes about{
+        to{
+            opacity: 1;
+        }
+    }
+    .big{
+        z-index: 4;
+        opacity: 0;
+        color: white;
+        background-color: rgb(95, 31, 23);
+        border-radius: 8px;
+        font-family: 仿宋;
+        font-size: 30px;
+        position: absolute;
+        left: 600px;
+        top: 250px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    } 
+    .name{
+        background-image: url(https://static.fotor.com.cn/assets/stickers/%E7%94%B0%E5%AD%97%E6%A0%BC/608eac90-abfc-4c91-80af-8e4308150eaf_medium_thumb.jpg);
+        background-size:100%;
+        z-index: 4;
+        opacity: 0;
+        color: rgb(56, 22, 22);
+        font-size: 100px;
+        font-family: 楷体;
+        position: absolute; 
+        line-height: 100px;
+        left: 1020px;
+        top: 250px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    }
+    
+    .school{
+        z-index: 4;
+        opacity: 0;
+        color:rgb(95, 31, 23);
+        font-size: 35px;
+        line-height: 60px;
+        font-family: 仿宋;
+        font-weight: 600;
+        position: absolute;
+        left: 600px;
+        top: 310px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    }
+    .english{
+        z-index: 4;
+        opacity: 0;
+        color:rgb(95, 31, 23);
+        font-size: 15px;
+        line-height: 60px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        left: 600px;
+        top: 280px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    }
+    .word{
+        z-index: 4;
+        opacity: 0;
+        color:rgb(61, 22, 19);
+        font-size: 22px;
+        line-height: 35px;
+        font-family: 宋体;
+        font-weight: 600;
+        position: absolute;
+        left: 600px;
+        top: 350px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    }
+    .en{
+        z-index: 4;
+        opacity: 0;
+        color:rgb(61, 22, 19);
+        font-size: 13px;
+        line-height: 35px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight:900;
+        position: absolute;
+        left: 730px;
+        top: 370px;
+        animation: aboutt 700ms ease-in-out 11s 1 forwards;
+    }
+    @keyframes aboutt{
+        to{
+            opacity: 1;
+        }
+    }
+    .line{
+       z-index: 4;
+       opacity: 0;
+       background-color:rgb(61, 22, 19) ;
+       color: white;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-size: 18px;
+       text-align: center;
+       width:701px;
+       height: 30px;
+       position: absolute;
+       left: 570px;
+       top: 530px;
+       animation: abouttt 700ms ease-in-out 10500ms 1 forwards;
+    }
+     @keyframes abouttt{
+        to{
+            opacity: 1;
+        }
+    }
+    .talk{
+       z-index: 4;
+       opacity: 0;
+       color: rgb(61, 22, 19);
+       font-size: 18px;
+       text-align: center;
+       font-family: 幼圆;
+       line-height: 25px;
+       width:500px;
+       height: 170px;
+       position: absolute;
+       text-indent: 10px;
+       left: 750px;
+       top: 580px;
+       animation: ok 700ms ease-in-out 11500ms 1 forwards;
+    }
+    @keyframes ok{
+        to{
+            opacity: 1;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <a class="logoz" href="https://inspirationart1896.lofter.com/">@百无一用</a>	
+        <nav>
+            <ul>
+                <li><a href="index.html">风华引</a></li>
+                <li><a href="author.html">丹青客</a></li>
+                <li><a href="">繁杂</a></li>
+            <a href="" class="botton good-botton">点赞</a>
+            <a href="" class="botton collect-botton">收藏</a>
+        </ul>
+        </nav>
+    </header>
+    <div class="forwards">
+     <img class="circle" src="百无一用.png">   
+     <p class="tittle">百无一用</p>
+    </div>
+     <div class="people">
+    <img class="y" src="白y.png">
+     <img class="o" src="黑y.png" >
+     <img class="b" src="白o.png">
+     <img class="h" src="黑o.png">
+    </div>
+    <div class="about">
+    <img class="bac" src="http://www.51pptmoban.com/d/file/2019/05/08/37d49280c224d6e62dc11df2e9c62df8.png">
+    <a class="color"></a>
+    <a class="name">百壹<br>無用</a>
+    <a class="big">基本信息></a>
+    <a class="school">东北师范大学/美术学院<br></a>
+    <a class="english">Northeast Normal University/Academy of Fine Arts </a>
+    <ul class="word">
+    <li>*自由绘图师/</li>
+    <li>*西幻、国风/</li> 
+    <li>*旅游、绘画/</li>
+    <li>*易燃易爆炸/</li>
+    </ul>
+    <ul class="en">
+    <li>OCCUPATION</li>
+    <li>STYLE</li>
+    <li>HOBBY</li>
+    <li>TEMPER</li>
+    </ul>
+    <a class="line">CRAZY TALK</a>
+    <a class="talk">我的小天狼星。我的教父，我嶙峋的病狮，我乖张的疯兽，我湖底的星星，我闷烧的炭火，我漏风的墙,我的自命不凡，我的优雅我的矜持，我蛛网上的露水，我再不会发芽的果核，我隐秘而一箱情愿的爱人。<br>我的小天狼星.
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+  <title>百无一用</title>
+<style>
+body {
+  display: flex;
+  height: 40em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:image-set(青海)
+}
+
+.haha
+{background-image: url(青海.jpg);
+  background-size: contain;}
+
+  .reveal {
+  position: relative;
+  display: flex;
+  color: #7c4eb1;
+  font-size: 1.5em;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  white-space: pre;
+ 
+}
+.reveal span {
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 2.4s forwards;
+}
+.reveal::before, .reveal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  
+  opacity: 0;
+  transform: scale(0);
+}
+.reveal::before {
+  left: 50%;
+  animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+.reveal::after {
+  right: 50%;
+  animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideLeft {
+  to {
+    left: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+@keyframes slideRight {
+  to {
+    right: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <a class="haha"> </a>
+  <div class="reveal">他把他的桂冠留在世上。</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<script id="rendered-js" >
+"use strict";
+let duration = 0.8;
+let delay = 0.3;
+let revealText = document.querySelector(".reveal");
+let letters = revealText.textContent.split("");
+revealText.textContent = "";
+let middle = letters.filter(e => e !== " ").length / 2;
+letters.forEach((letter, i) => {
+    let span = document.createElement("span");
+    span.textContent = letter;
+    span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`;
+    revealText.append(span);
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 

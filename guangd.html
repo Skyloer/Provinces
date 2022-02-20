@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>广东·粤</title>
+  <link rel="stylesheet" href="province.css">
+  <style type="text/css">
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+    font-size:22px;
+    color: rgba(12, 16, 20, 0);
+    font-weight: 0;
+    font-family: 宋体;
+    text-align: center;
+}
+
+
+html:hover .title{
+    color: rgba(20, 26, 31, 0.76);
+    transition-delay: 1s; 
+    transition-duration: 2s; 
+    transition-property: height; 
+    transition-timing-function: ease-in-out;
+}
+
+.forword{
+    background-image: url(广东0.png);
+    width: 600px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left:480px;
+    text-align: center;
+	object-fit:fill;
+}
+html:hover .forword{
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-delay:500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;/* 保持结束状态 */
+    }
+/* <使用动画> */
+@keyframes circle{
+        from{
+            width: 600px;
+            height: 600px;
+        }
+        to{
+            width: 600px;
+            height: 600px;
+            background-image:url(广东.png);
+        }
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 780px;
+}
+
+.introduce_item {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    top: 760px;
+    flex-direction: row-reverse;
+    background-image: url(背景2.jfif);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    margin-right:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.introduce_item_title {
+    text-indent: 50px;
+    margin-right:200px;
+    margin-left: 150px;
+    align-self: center;
+    color: rgb(41, 44, 43);
+    width: 390px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 100px;
+}
+.introduce_item_imgs {
+    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 150px;
+    width: 400px; 
+}
+.introduce_item_titles {
+    position: absolute;
+    top: 1722px;
+    left: 620px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    width: 300px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.introduce_item_imgo {
+    width: 500px;
+    height: 600px;
+    margin-left:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.introduce_item_img_left {
+    margin-left:60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+    z-index:1
+}
+.introduce_item_title_left {
+    position: absolute;
+    top: 2300px;
+    left: 340px;
+    width: 330px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_img_right {
+    margin-right: 60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+}
+.introduce_item_title_right {
+    position: absolute;
+    top: 2300px;
+    right: 340px;
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_titlez{
+    position: absolute;
+    top: 2800px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 幼圆;
+    font-weight:500;
+    color: rgb(71, 75, 73);
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 300px;
+
+}
+.footer {
+    text-align: center;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px
+}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 15s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 30s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+  </style>
+  </head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <nav>
+        <ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+    </nav>
+    </header>
+<div class="forword">     
+<a></a>
+</div>
+<div class="title">
+ <h9>“先生一笑而起，渺海阔而天高。”<br><br>
+</div>
+<div class="introduce">
+<div class="introduce_item">
+    <img class="introduce_item_img" src="https://c-ssl.duitang.com/uploads/item/201902/01/20190201095308_CXKzB.jpeg" alt="">
+    <span class="introduce_item_title">
+        广东，简称“粤”，中华人民共和国省级行政区，省会广州。因古地名广信之东，故名“广东”。<br>位于南岭以南，南海之滨，与香港、澳门、广西、湖南、江西及福建接壤，与海南隔海相望。<br>
+        广东是岭南文化的重要传承地，在语言、风俗、生活习惯和历史文化等方面都有着独特风格。广东也是中国人口较多的省份之一。 广东省属于东亚季风区，从北向南分别为中亚热带、南亚热带和热带气候，是全国光、热和水资源丰富的地区，是农耕文明发祥地之一。</span>
+   </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title">
+            广东是中国的南大门，处在南海航运枢纽位置上。早在三千多年前就已经形成以陶瓷为纽带的贸易交往圈，并通过水路将其影响扩大到沿海和海外岛屿。<br>>到了清代，广州成为全国唯一的对外通商口岸。改革开放后，广东成为改革开放前沿阵地和引进西方经济、文化、科技的窗口。
+            <br>1911年10月10日武昌起义成功后，各省纷纷响应，宣布独立。11月9日，广东便实现“和平光复”，胡汉民为广东都督，陈炯明为副都督。11月10日，广东军政府正式宣告成立。
+            <br>1949年10月2日，中国人民解放军第二野战军第四兵团和第四野战军第十五兵团发起广东战役。1949年10月14日，广州解放；10月28日，广州市人民政府成立；11月6日，广东省人民政府正式成立。<br> 
+            </span>
+            <img class="introduce_item_imgo" src="https://c-ssl.duitang.com/uploads/item/201607/16/20160716105916_TmnQU.jpeg" alt="">
+    </div>
+    <div class="introduce_item">
+        <img class="introduce_item_imgs" src="白色.png" alt=""> 
+        <span class="introduce_item_titles">《客居岭南》<br> 
+            天风吹白波，归客欲如何。 <br>
+            炎国逢花早，春船载雨过。 <br>
+            畏蛇焚瘿木，防蛊种衰荷。<br>
+            洞口商人妇，时时送夜歌。</span>
+    </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title_left">《惠州一绝》<br>
+            罗浮山下四时春，<br>
+            卢橘黄梅次第新。 <br>
+            日啖荔枝三百颗，<br>
+            不妨长作岭南人。</span>
+         <img class="introduce_item_img_left" src="副本.png" alt=""> 
+        <span class="introduce_item_title_right">《送人游岭南》<br>
+            少别华阳万里游，<br>
+            近南风景不曾秋。 <br>
+            红芳绿笋是行路，<br>
+            纵有啼猿听却幽。 </span>
+        <img class="introduce_item_img_right" src="副本.png" alt=""> 
+        <span class="introduce_item_titlez">炮声先在这里响起， <br>而后震响了九州大地； <br>改革先在这里开放， <br>而后带动了整个中国。 <br>饮着江流的水， <br>染着海天的色， <br>一音弗失， 婉转着梨园旧韵； <br>万铺更张，氤氲起早间烟火。 <br>创新不止，力耕不辍， <br>俯首贻苦，仰天圆梦。
+            </span>
+        </div>
+</div>
+<footer>
+<a class="footer" href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>
+</footer>
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+ </body>
+</html>

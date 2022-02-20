@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山西·晋</title>
+  <link rel="stylesheet" href="province.css">
+  <style type="text/css">
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+    font-size:22px;
+    color: rgba(240, 248, 255, 0);
+    font-weight: 0;
+    font-family: 宋体;
+    text-align: center;
+}
+
+
+html:hover .title{
+    color: rgba(240, 248, 255, 0.76);
+    transition-delay: 1s; 
+    transition-duration: 2s; 
+    transition-property: height; 
+    transition-timing-function: ease-in-out;
+}
+
+.forword{
+    background-image: url(山西0.png);
+    width: 600px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left:480px;
+    text-align: center;
+	object-fit:fill;
+}
+html:hover .forword{
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-delay:500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;/* 保持结束状态 */
+    }
+/* <使用动画> */
+@keyframes circle{
+        from{
+            width: 600px;
+            height: 600px;
+        }
+        to{
+            width: 600px;
+            height: 600px;
+            background-image:url(山西.png);
+        }
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 780px;
+}
+
+.introduce_item {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    top: 760px;
+    flex-direction: row-reverse;
+    background-image: url(背景2.jfif);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    margin-right:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.introduce_item_title {
+    text-indent: 50px;
+    margin-right:200px;
+    margin-left: 150px;
+    align-self: center;
+    color: rgb(41, 44, 43);
+    width: 390px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 100px;
+}
+.introduce_item_imgs {
+    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 150px;
+    width: 400px; 
+}
+.introduce_item_titles {
+    position: absolute;
+    top: 1722px;
+    left: 620px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    width: 300px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.introduce_item_imgo {
+    width: 500px;
+    height: 600px;
+    margin-left:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.introduce_item_img_left {
+    margin-left:60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+    z-index:1
+}
+.introduce_item_title_left {
+    position: absolute;
+    top: 2300px;
+    left: 340px;
+    width: 330px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_img_right {
+    margin-right: 60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+}
+.introduce_item_title_right {
+    position: absolute;
+    top: 2300px;
+    right: 340px;
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_titlez{
+    position: absolute;
+    top: 2800px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 幼圆;
+    font-weight:500;
+    color: rgb(71, 75, 73);
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 150px;
+
+}
+.footer {
+    text-align: center;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px
+}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 15s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 30s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+  </style>
+  </head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <nav>
+        <ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+    </nav>
+    </header>
+<div class="forword">     
+<a></a>
+</div>
+<div class="title">
+ <h9>如潮水样前赴后继推着车轮前行的<br><br>
+ <h10>万千无名之辈
+</div>
+<div class="introduce">
+<div class="introduce_item">
+    <img class="introduce_item_img" src="https://c-ssl.duitang.com/uploads/item/201607/03/20160703142514_vnhu2.jpeg" alt="">
+    <span class="introduce_item_title">
+        山西，简称“晋”，中华人民共和国省级行政区，省会太原，位于中国华北，东与河北为邻，西与陕西相望，南与河南接壤，北与内蒙古毗连。<br><br>
+        山西省地势呈东北斜向西南的平行四边形，是典型的为黄土覆盖的山地高原，地势东北高西南低。高原内部起伏不平，河谷纵横，地貌有山地、丘陵、台地、平原。 <br> 山西省自古就有人类活动的迹象，并为中华文明的发源地之一。
+        </span>
+   </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title">
+            大禹去世后，其子启继位。夏朝早期的统治中心在今山西晋南夏县一带，今夏县东下冯遗址是重要的夏墟。商朝时，山西南部在其“邦畿千里”之内，其余地方则散布着十几个方国部落。西周初期大规模分封诸侯，山西中南部为十余个诸侯的领地，其中主要诸侯国是晋国。<br> 
+            进入半殖民地半封建社会以后，山西的经济、文化发展受到严重破坏。<br>
+山西作为革命老区，在民国十年在太原组建社会主义青年团，开展革命活动。红军东征在晋西、晋中、晋南各地遍撒革命火种。
+            </span>
+            <img class="introduce_item_imgo" src="https://c-ssl.duitang.com/uploads/item/201901/18/20190118104157_vibyi.jpeg" alt="">
+    </div>
+    <div class="introduce_item">
+        <img class="introduce_item_imgs" src="副本.png" alt=""> 
+        <span class="introduce_item_titles">《登鹳雀楼》<br>
+            迥临飞鸟上，<br>高出世尘间。<br>天势围平野，<br>河流入断山。<br></span>
+    </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title_left">《游石壁》<br>绝壁秋容胜， 荒坛冷气清。<br>野僧留客饮， 山鸟罥人鸣。<br>已极登临兴， 无穷今古情。<br>浩歌一樽酒， 四海共升平。</span>
+         <img class="introduce_item_img_left" src="白色.png" alt=""> 
+        <span class="introduce_item_title_right">《太原早秋》<br>岁落众芳歇，时当大火流。<br>  霜威出塞早，云色渡河秋。<br> 梦绕边城月，心飞故国楼。<br></span>
+             <img class="introduce_item_img_right" src="白色.png" alt=""> 
+        <span class="introduce_item_titlez">苦难压不弯他的脊梁，他与他的人民，<br>默默立于太行山黧黑的山脉下，<br>立于天地之间。<br>静默无言。<br>他的历史，<br>由万千无名之辈构成，<br>晋商车上的铜铃，<br>挖出黑金时滴落的汗水，<br>经过夏晒冬捞的<br>第一滴老陈醋散发出的醇香。<br>无数的无名之辈构造了他，<br>他们在这片土地上永世劳作，<br>籍籍无名又如何，<br>他们自有天地间笔直的脊梁，<br>
+        </span>
+</div>
+</div>
+<footer>
+<a class="footer" href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>
+</footer>
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+ </body>
+</html>

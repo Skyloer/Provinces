@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青海·青</title>
+  <link rel="stylesheet" href="province.css">
+  <style type="text/css">
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+    font-size:22px;
+    color: rgba(240, 248, 255, 0);
+    font-weight: 0;
+    font-family: 宋体;
+    text-align: center;
+}
+
+
+html:hover .title{
+    color: rgba(240, 248, 255, 0.76);
+    transition-delay: 1s; 
+    transition-duration: 2s; 
+    transition-property: height; 
+    transition-timing-function: ease-in-out;
+}
+
+.forword{
+    background-image: url(青海0.png);
+    width: 600px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left:480px;
+    text-align: center;
+	object-fit:fill;
+}
+html:hover .forword{
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-delay:500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;/* 保持结束状态 */
+    }
+/* <使用动画> */
+@keyframes circle{
+        from{
+            width: 600px;
+            height: 600px;
+        }
+        to{
+            width: 600px;
+            height: 600px;
+            background-image:url(青海.png);
+        }
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 780px;
+}
+
+.introduce_item {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    top: 760px;
+    flex-direction: row-reverse;
+    background-image: url(背景2.jfif);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    margin-right:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.introduce_item_title {
+    text-indent: 50px;
+    margin-right:200px;
+    margin-left: 150px;
+    align-self: center;
+    color: rgb(41, 44, 43);
+    width: 390px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 100px;
+}
+.introduce_item_imgs {
+    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 150px;
+    width: 400px; 
+}
+.introduce_item_titles {
+    position: absolute;
+    top: 1722px;
+    left: 620px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    width: 300px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.introduce_item_imgo {
+    width: 500px;
+    height: 600px;
+    margin-left:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.introduce_item_img_left {
+    margin-left:60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+    z-index:1
+}
+.introduce_item_title_left {
+    position: absolute;
+    top: 2300px;
+    left: 340px;
+    width: 330px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_img_right {
+    margin-right: 60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+}
+.introduce_item_title_right {
+    position: absolute;
+    top: 2300px;
+    right: 340px;
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_titlez{
+    position: absolute;
+    top: 2800px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 幼圆;
+    font-weight:500;
+    color: rgb(71, 75, 73);
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 300px;
+
+}
+.footer {
+    text-align: center;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px
+}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 15s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 30s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+  </style>
+  </head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <nav>
+        <ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+    </nav>
+    </header>
+<div class="forword">     
+<a></a>
+</div>
+<div class="title">
+ <h9>他把他的桂冠留在世上。<br><br>
+ <h10>“他的怀里抱着中华水塔，青海湖是他热忱的心”
+</div>
+<div class="introduce">
+<div class="introduce_item">
+    <img class="introduce_item_img" src="青海风景1.jpeg" alt="">
+    <span class="introduce_item_title">
+        青海省，简称“青”，是中华人民共和国省级行政区，省会西宁。位于中国西北内陆。<br><br>
+            青海省地势总体呈西高东低，南北高中部低的态势，西部海拔高峻，向东倾斜，呈梯型下降，东部地区为青藏高原向黄土高原过渡地带，地形复杂，地貌多样。青海省地貌复杂多样，五分之四以上的地区为高原，东部多山，西部为高原和盆地，兼具青藏高原、内陆干旱盆地和黄土高原三种地形地貌，属高原大陆性气候，地跨黄河、长江、澜沧江、黑河、大通河5大水系。 
+        </span>
+   </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title">
+            因境内有国内最大的内陆咸水湖——青海湖而得名，简称青。<br>
+            唐、宋属吐蕃；元朝其土地属宣政院管辖；明朝属朵甘都司等；清朝初为卫藏地，后分设西宁办事大臣，又称青海办事大臣，为青海得名之始。<br>
+            民国初设青海办事长官，后属甘边宁海镇守使，之后建青海省，省名至今未变。<br> 
+            </span>
+            <img class="introduce_item_imgo" src="https://uploadfile.bizhizu.cn/2015/0516/20150516100227567.jpg" alt="">
+    </div>
+    <div class="introduce_item">
+        <img class="introduce_item_imgs" src="副本.png" alt=""> 
+        <span class="introduce_item_titles">《从军行》<br> 青海长云暗雪山，<br>孤城遥望玉门关。<br>黄沙百战穿金甲，<br>不破楼兰终不还！</span>
+    </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title_left">《移家别湖上亭》<br>好是春风湖上亭，<br>柳条藤蔓系离情。<br>黄莺久住浑相识，<br>欲别频啼四五声。 </span>
+         <img class="introduce_item_img_left" src="白色.png" alt=""> 
+        <span class="introduce_item_title_right">《河湟书事》<br>阴山铁骑角弓长，<br>闲日原头射白狼。<br>青海无波春雁下，<br>草生碛里见牛羊。</span>
+        <img class="introduce_item_img_right" src="白色.png" alt=""> 
+        <span class="introduce_item_titlez">他向上是霜雪，<br>一层又一层覆盖在脊梁之上。<br>他向下是盐粒，<br>禁锢着赤裸的双足。<br>他该生着双翼，<br>破圆日，破弯钩，<br>于是残影倒影在那宝石般美丽的青海湖上，<br>在历史的沉积中化成一粒又一粒碎珠，<br>点缀在山脉下，高原上。</span>
+</div>
+</div>
+<footer>
+<a class="footer" href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>
+</footer>
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+ </body>
+</html>

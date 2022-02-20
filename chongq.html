@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重庆·渝</title>
+  <link rel="stylesheet" href="province.css">
+  <style type="text/css">
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+    font-size:22px;
+    color: rgba(240, 248, 255, 0);
+    font-weight: 0;
+    font-family: 宋体;
+    text-align: center;
+}
+
+
+html:hover .title{
+    color: rgba(240, 248, 255, 0.76);
+    transition-delay: 1s; 
+    transition-duration: 2s; 
+    transition-property: height; 
+    transition-timing-function: ease-in-out;
+}
+
+.forword{
+    background-image: url(重庆0.png);
+    width: 600px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left:480px;
+    text-align: center;
+	object-fit:fill;
+}
+html:hover .forword{
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-delay:500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;/* 保持结束状态 */
+    }
+/* <使用动画> */
+@keyframes circle{
+        from{
+            width: 600px;
+            height: 600px;
+        }
+        to{
+            width: 600px;
+            height: 600px;
+            background-image:url(重庆.png);
+        }
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 780px;
+}
+
+.introduce_item {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    top: 760px;
+    flex-direction: row-reverse;
+    background-image: url(背景2.jfif);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    margin-right:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.introduce_item_title {
+    text-indent: 50px;
+    margin-right:200px;
+    margin-left: 150px;
+    align-self: center;
+    color: rgb(41, 44, 43);
+    width: 390px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 100px;
+}
+.introduce_item_imgs {
+    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 150px;
+    width: 400px; 
+}
+.introduce_item_titles {
+    position: absolute;
+    top: 1722px;
+    left: 620px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    width: 300px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.introduce_item_imgo {
+    width: 500px;
+    height: 600px;
+    margin-left:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.introduce_item_img_left {
+    margin-left:60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+    z-index:1
+}
+.introduce_item_title_left {
+    position: absolute;
+    top: 2300px;
+    left: 340px;
+    width: 330px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_img_right {
+    margin-right: 60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+}
+.introduce_item_title_right {
+    position: absolute;
+    top: 2300px;
+    right: 340px;
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_titlez{
+    position: absolute;
+    top: 2800px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 幼圆;
+    font-weight:500;
+    color: rgb(71, 75, 73);
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 200px;
+
+}
+.footer {
+    text-align: center;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px
+}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 15s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 30s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+  </style>
+  </head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <nav>
+        <ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+    </nav>
+    </header>
+<div class="forword">     
+<a></a>
+</div>
+<div class="title">
+ <h9>“大雅至极不风流。”<br><br>
+</div>
+<div class="introduce">
+<div class="introduce_item">
+    <img class="introduce_item_img" src="https://c-ssl.duitang.com/uploads/item/201911/06/20191106230814_ligcf.jpg" alt="">
+    <span class="introduce_item_title">
+        重庆，简称“渝”，别称山城，是中华人民共和国省级行政区、直辖市、国家中心城市、超大城市 国务院批复确定的中国重要的中心城市之一、长江上游地区经济中心、国家重要的现代制造业基地、西南地区综合交通枢纽。<br>
+        重庆地处中国内陆西南部，是长江上游地区的经济、金融、科创、航运和商贸物流中心，国家物流枢纽,西部大开发重要的战略支点、“一带一路”和长江经济带重要联结点以及内陆开放高地、山清水秀美丽之地,既以江城、雾都、桥都著称，又以山城扬名。 <br> 重庆以汉族为主，少数民族主要有土家族、苗族等。旅游资源丰富，有长江三峡、世界文化遗产大足石刻、世界自然遗产武隆喀斯特和南川金佛山等景观。</span>
+   </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title">
+            重庆是国家历史文化名城。
+            <br>1189年，宋光宗赵惇先封恭王再即帝位，自诩“双重喜庆”，重庆由此得名。
+            <br>重庆是“红岩精神”起源地，巴渝文化发祥地，“火锅”、“吊脚楼”等影响深远；在文字记载的3000余年中 ，曾三为国都，四次筑城，史称“巴渝” ；抗战时期为国民政府陪都。<br> 
+            </span>
+            <img class="introduce_item_imgo" src="https://c-ssl.duitang.com/uploads/blog/202104/13/20210413203206_f6817.jpg" alt="">
+    </div>
+    <div class="introduce_item">
+        <img class="introduce_item_imgs" src="白色.png" alt=""> 
+        <span class="introduce_item_titles">《夜雨寄北》<br>
+            君问归期未有期，<br>巴山夜雨涨秋池。<br>
+            何当共剪西窗烛，<br>却话巴山夜雨时。</span>
+    </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title_left">《竹枝词·其一》<br>
+            瞿塘峡口水烟低，<br>白帝城头月向西。<br>
+            唱到竹枝声咽处，<br>寒猿闇鸟一时啼。</span>
+         <img class="introduce_item_img_left" src="副本.png" alt=""> 
+        <span class="introduce_item_title_right">《竹枝词·其三》<br>
+            巴东船舫上巴西，<br>波面风生雨脚齐。<br>
+            水蓼冷花红簇簇，<br>江篱湿叶碧凄凄。</span>
+        <img class="introduce_item_img_right" src="副本.png" alt=""> 
+        <span class="introduce_item_titlez">我随他从防空洞里出来，<br>一明一暗间，阳光太烈。<br>我低下头，他却直起身子看太阳，<br>
+            天上一个影，江上一个影，<br>车流下又是一个影，<br>他历历数他们的名——<br>北京，天津，上海。<br>
+            远处在炸山头，他捂着腹部蹲下身去，<br>头却不肯低，<br>爆炸的火光燃在他眼里。<br>
+            我问他，<br>做太阳，痛不痛？
+            </span>
+        </div>
+</div>
+<footer>
+<a class="footer" href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>
+</footer>
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+ </body>
+</html>

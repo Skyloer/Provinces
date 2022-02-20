@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>风华引</title>
+	<script src="js/loudlinks.min.js">
+		</Script>
+  <style type="text/css">
+*{padding:0%;
+	margin:0%
+}
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+img{
+	background-color: rgb(207, 196, 196);
+	height: 600px;
+	width: 100px;
+	margin: 4px;
+	border-radius: 15px;
+	object-fit: cover;
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 710px;
+
+}
+/* #audio{
+	display: none; 
+}*/
+img:hover{
+	animation-duration: 400ms;
+	animation-delay: 0ms;
+	animation-name: donghua;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+    
+}
+@keyframes donghua{
+	to{
+		width: 700px;
+		height: 600px;
+		animation-timing-function: ease-in-out;
+	    }
+	}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 25s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 45s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+.word{
+	justify-content: center;
+	text-align: center;
+	font-size: 2em;
+	font-family: 楷体;
+	font-weight: 500;
+	margin-top: 200px;
+	margin-bottom: 500px;
+}
+footer{
+	text-align: center;
+	color: #777;
+	position: absolute;
+	width: 100%;
+	font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+<header>
+<a class="logo">Province</a>
+	<nav>
+		<ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+	</nav>
+</header>
+<div>
+<a href="shanx.html"><img src="山西  如潮水样前赴后继推着车轮前行的，万千无名之辈。.jpg" alt="山西"></a>
+<a href="qingh.html"><img src="青海.jpg" alt="青海"></a>
+<a href="yunn.html"><img src="云南 三春杨柳，九夏芙蓉，两行秋雁，一枕清霜。.jpg" alt="云南"></a>
+<a href="xiz.html".html"><img src="西藏  我们受了那么多苦，却还是芸芸众生。.jpg" alt="西藏"></a>
+<a href="heb.html"><img src="河北 山海有声。.jpg" alt="河北"></a>
+<a href="chongq.html"><img src="重庆   大雅至极不风流。.jpg" alt="重庆"></a>
+<a href="hun.html"><img src="湖南 醉笑陪公三万场，不用诉离殇。.jpg" alt="湖南"></a>
+<a href="fuj.html"><img src="福建 云山乱，晓山青。.jpg" alt="福建"></a>
+<a href="zhej.html"><img src="浙江 十里寒塘路，烟花一半醒。.jpg" alt="浙江"></a>
+<a href="anhui.html"><img src="安徽  世事漫随流水，算来一梦浮生。.jpg" alt="安徽"></a>
+<a href="guangd.html".html"><img src="广东 先生一笑而起，渺海阔而天高。.jpg" alt="广东"></a>
+</div> 
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+<a class="word">“废纸三千，一事无成。”</a>
+<audio src="./金属咔嚓声.mp3"></audio>
+</body>
+<footer >
+<a href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>	
+</footer>
+<script>
+	let mouse = (els,m_el) => {
+        [...els].forEach(v => {
+            v.onmouseover = () => {
+                m_el.play();
+            };
+            v.onmouseout = () => {
+                m_el.load();
+            }
+        })
+		console.log(els);
+    }
+    mouse(document.querySelectorAll('img'),document.querySelector('audio'));
+</script>
+</html>

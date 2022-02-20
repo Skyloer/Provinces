@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>西藏·藏</title>
+  <link rel="stylesheet" href="province.css">
+  <style type="text/css">
+nav{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	
+}
+ul{
+	list-style: none;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:rgb(110, 109, 105);
+}
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(9, 7, 19);
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(51, 49, 49);
+	border-width: 1px;
+	padding: 10px;
+}
+nav li{
+	display: inline-block;
+	padding: 0 20px;
+	align-items: center;
+}
+nav li a{
+	color: rgb(110, 109, 105);
+}
+nav li a:hover{
+    color: white;
+}
+.logo{
+	font-size: 20px;
+	font-weight:600
+}
+.botton{
+	padding: 15px 10px;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+.good-botton{
+	border:1px solid rgb(110, 109, 105)
+}
+.good-botton:hover{
+	border:1px solid white
+}
+.collect-botton{
+	background-color: rgb(110, 109, 105);
+	color:black
+}
+.collect-botton:hover{
+	border: 2px solid black;
+}
+html{
+	font-size: 80%;
+	background-image: url(背景.jfif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+    font-size:22px;
+    color: rgba(240, 248, 255, 0);
+    font-weight: 0;
+    font-family: 宋体;
+    text-align: center;
+}
+
+
+html:hover .title{
+    color: rgba(25, 27, 27, 0.76);
+    transition-delay: 1s; 
+    transition-duration: 2s; 
+    transition-property: height; 
+    transition-timing-function: ease-in-out;
+}
+
+.forword{
+    background-image: url(西藏0.png);
+    width: 600px;
+    color: rgb(70, 62, 62);
+    height: 600px;
+    margin-top: 3%;
+    margin-left:480px;
+    text-align: center;
+	object-fit:fill;
+}
+html:hover .forword{
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-delay:500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;/* 保持结束状态 */
+    }
+/* <使用动画> */
+@keyframes circle{
+        from{
+            width: 600px;
+            height: 600px;
+        }
+        to{
+            width: 600px;
+            height: 600px;
+            background-image:url(西藏.png);
+        }
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 780px;
+}
+
+.introduce_item {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    top: 760px;
+    flex-direction: row-reverse;
+    background-image: url(背景2.jfif);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    margin-right:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.introduce_item_title {
+    text-indent: 50px;
+    margin-right:200px;
+    margin-left: 150px;
+    align-self: center;
+    color: rgb(41, 44, 43);
+    width: 390px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 100px;
+}
+.introduce_item_imgs {
+    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 150px;
+    width: 400px; 
+}
+.introduce_item_titles {
+    position: absolute;
+    top: 1722px;
+    left: 620px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    width: 300px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(184, 187, 186);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.introduce_item_imgo {
+    width: 500px;
+    height: 600px;
+    margin-left:180px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.introduce_item_img_left {
+    margin-left:60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+    z-index:1
+}
+.introduce_item_title_left {
+    position: absolute;
+    top: 2300px;
+    left: 340px;
+    width: 330px;
+    text-align: center;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_img_right {
+    margin-right: 60px;
+    margin-top: 10px;
+    position: relative; 
+    margin-bottom: 100px;
+    width: 400px; 
+}
+.introduce_item_title_right {
+    position: absolute;
+    top: 2300px;
+    right: 340px;
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 幼圆;
+    color: rgb(72, 75, 74);
+    font-size: 18px;
+    line-height: 36px;
+    z-index:2
+}
+.introduce_item_titlez{
+    position: absolute;
+    top: 2800px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 幼圆;
+    font-weight:500;
+    color: rgb(71, 75, 73);
+    font-size: 18px;
+    line-height: 36px;
+    padding-bottom: 300px;
+
+}
+.footer {
+    text-align: center;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px
+}
+.snow-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    pointer-events: none; /*阻止任何事件*/
+}
+ 
+.snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*垂直、水平居中*/
+    margin: auto;
+    transform: translate(0, -100%);
+    animation: snowing infinite linear;
+    pointer-events: none;
+}
+ 
+.foreground {
+    animation-duration: 15s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+}
+ 
+.foreground.layer {
+    animation-delay: 12.5s; /*推迟时间是总时间/2*/
+  
+}
+ 
+.medium {
+    animation-duration: 30s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+}
+ 
+.medium.layer {
+    animation-delay: 17.5s;
+}
+ 
+.background {
+    animation-duration: 35s;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+    
+}
+ 
+.background.layer {
+    animation-delay: 22.5s;
+}
+ 
+@keyframes snowing {
+    100% {
+        transform: translate(15%, 100%); 
+    }
+}
+  </style>
+  </head>
+<body>
+    <header>
+    <a class="logo">Province</a>
+    <nav>
+        <ul>
+			<li><a href="index.html">风华引</a></li>
+			<li><a href="author.html">丹青客</a></li>
+			<li><a href="">繁杂</a></li>
+		<a href="" class="botton good-botton">点赞</a>
+		<a href="" class="botton collect-botton">收藏</a>
+	</ul>
+    </nav>
+    </header>
+<div class="forword">     
+<a></a>
+</div>
+<div class="title">
+ <h9>我们受了那么多苦，<br><br>
+ <h10>却还是芸芸众生。
+</div>
+<div class="introduce">
+<div class="introduce_item">
+    <img class="introduce_item_img" src="https://c-ssl.duitang.com/uploads/item/201811/20/20181120022532_rxdoi.png" alt="">
+    <span class="introduce_item_title">
+        西藏，简称“藏”，首府拉萨市，位于中华人民共和国西南地区，是中国五个少数民族自治区之一。西藏位于青藏高原西南部，素有“世界屋脊”之称。<br><br>
+        西藏北邻新疆，东接四川，东北紧靠青海，东南连接云南；周边与缅甸、印度、不丹、尼泊尔、克什米尔等国家及地区接壤，陆地国界线4000多公里，是中国西南边陲的重要门户。<br>
+        西藏以其雄伟壮观、神奇瑰丽的自然风光闻名。它地域辽阔，地貌壮观、资源丰富。自古以来，这片土地上的人们创造了丰富灿烂的民族文化。
+        </span>
+   </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title">
+            自元朝始，中央政权始终对西藏行使着有效管辖。藏族人民是中华民族大家庭中的重要一员。<br>
+            西藏唐宋时期称为“吐蕃”，元明时期称为“乌斯藏”，清代称为“唐古特”、“图伯特”等。清朝康熙年间起称“西藏”至今。 唐、宋属吐蕃；元朝其土地属宣政院管辖；明朝属朵甘都司等；清朝初为卫藏地，后分设西宁办事大臣，又称青海办事大臣，为青海得名之始。<br>
+            民国初设青海办事长官，后属甘边宁海镇守使，之后建青海省，省名至今未变。<br> 
+            </span>
+            <img class="introduce_item_imgo" src="https://c-ssl.duitang.com/uploads/blog/202012/23/20201223144219_645c6.jpg" alt="">
+    </div>
+    <div class="introduce_item">
+        <img class="introduce_item_imgs" src="副本.png" alt=""> 
+        <span class="introduce_item_titles">白宫红殿湛蓝天，<br>盖世高原气万千。<br>竺法渐传三界远，<br>盛音近绕佛堂前。<br></span>
+    </div>
+    <div class="introduce_item">
+        <span class="introduce_item_title_left">不 生 不 灭，<br> 不 垢 不 净，<br> 不 增 不 减，<br>
+            是 故 空 中 无 色，<br> 无 受 想 行 识。 </span>
+         <img class="introduce_item_img_left" src="白色.png" alt=""> 
+        <span class="introduce_item_title_right"> 无 无 明，<br> 亦 无 无 明 尽，<br>
+            乃 至 无 老 死，<br>亦 无 老 死 尽。</span>
+        <img class="introduce_item_img_right" src="白色.png" alt=""> 
+        <span class="introduce_item_titlez">你看他荒芜贫瘠落魄<br>冷清冰川遍布<br>不近人情。<br>却不知天下三分明月夜，<br>来处都是他；<br>也不知道风软一江水，<br>风也是他，<br>水也是他。
+        </span>
+</div>
+</div>
+<footer>
+<a class="footer" href="https://inspirationart1896.lofter.com/">——源LOFTER    @百无一用</a>
+</footer>
+<div class="snow-container">
+	<div class="snow foreground"></div>
+	<div class="snow foreground layer"></div> <!--延迟衔接-->
+	<div class="snow medium"></div>
+	<div class="snow medium layer"></div>
+	<div class="snow background"></div>
+	<div class="snow background layer">
+	</div>
+ </body>
+</html>
